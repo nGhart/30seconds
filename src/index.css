@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  height: 100vh;
+  width: 100wv;
+  background: url(./assets/background.jpeg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.start {
+  z-index: 5;
+}
+.game,
+.start {
+  width: 80%;
+  height: 85vh;
+  position: absolute;
+}
+.title {
+  padding: 10px;
+}
+
+.instructions {
+  flex-direction: column;
+}
+.instructionText {
+  margin: 0 20%;
+  text-align: justify;
+}
+.font1 {
+  font-family: 'Patrick Hand', cursive;
+}
+.font2 {
+  font-family: 'Nanum Pen Script', cursive;
+}
+.font3 {
+  font-family: 'Luckiest Guy', cursive;
+}
+.font4 {
+  font-family: 'Itim', cursive;
+}
+.startGame {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(181, 37, 61);
+  margin: auto;
+  cursor: pointer;
+}
+.startGame:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.startTurnButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(181, 37, 61);
+  margin: auto;
+}
+.guessContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px;
+  justify-content: center;
+}
+.guessButtons {
+  padding: 5px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight: 700;
+  font-size: 25px;
+  width: 40%;
+  margin: auto;
+}
+.doneButton {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px outset rgb(181, 37, 61);
+  background-color: rgb(181, 37, 61);
+  color: white;
+  margin: auto;
+  font-family: 'Luckiest Guy', cursive;
+}
+.doneButton:hover {
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+}
+
+.gameBoard,
+.instructions {
+  background-color: pink;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.instructions .startGame {
+  margin: 20px;
+}
+.title {
+  background-color: green;
+}
+.gamePlay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.timer {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 5px outset rgb(55, 9, 16);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+  font-size: 25px;
+}
+
+.white {
+  color: white;
+}
